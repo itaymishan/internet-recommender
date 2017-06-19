@@ -1,0 +1,23 @@
+<section id="download" class="content-section text-center">
+    <div class="download-section">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Deal Finder</h2>
+                <p>We need some details so we can find you the best deal</p>
+                 <form action="/grayscales" method="POST">
+                    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" type="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" id="pwd">
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="unlimited">Unlimited</label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>                
+            </div>
+        </div>
+    </div>
+</section>
