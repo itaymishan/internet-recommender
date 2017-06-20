@@ -5,6 +5,6 @@ class GrayscalesController < ApplicationController
     end
     
     def create
-      debugger
+      render 'show'
     end
 end
