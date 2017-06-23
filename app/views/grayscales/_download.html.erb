@@ -7,15 +7,27 @@
                  <form action="/grayscales" method="POST">
                     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
                     <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" type="email">
+                        <input type="email" class="form-control input-lg" name="email" id="email" type="email">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="full_name" id="full_name">
+                        <input type="text" class="form-control input-lg" name="full_name" id="full_name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" name="current_price" id="full_name">
+                    </div>
+                    <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Daily Use
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Heavy Use</li>
+                        <li>Medium Use</li>
+                        <li>Light Use</li>
+                    </ul>
                     </div>
                     <div class="checkbox">
                         <label><input type="checkbox" name="unlimited">Unlimited</label>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                 </form>                
             </div>
         </div>
